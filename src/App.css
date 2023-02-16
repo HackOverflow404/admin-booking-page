@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1.48fr 0.52fr;
+  grid-template-rows: 1fr;
+  gap: 0.5em;
+
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App:focus-within {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Bookings {
+  grid-column: 1;
+  grid-row: 1;
+
+  width: 1fr;
+  height: 100%;
+
+  overflow-y: hidden;
+}
+
+.Bookings:hover {
+  overflow-y: overlay;
+}
+
+.Settings {
+  grid-column: 2;
+  grid-row: 1;
+  
+  width: 1fr;
+  height: 100%;
+
+  overflow-y: hidden;
+}
+
+.Settings:hover {
+  overflow-y: overlay;
 }

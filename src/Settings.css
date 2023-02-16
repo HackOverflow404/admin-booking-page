@@ -1,0 +1,162 @@
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 10% 10% 10% 5% 10% 55%;
+
+  height: calc(100% - 2em * 2);
+  width: calc(100% - 2em * 2);
+
+  margin: 2em;
+}
+
+input[type="submit"] {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+#price-label {
+  grid-row: 2;
+  grid-column: 1/3;
+}
+
+#price {
+  grid-row: 2;
+  grid-column: 3/5;
+}
+
+#maxDate-label {
+  grid-row: 3;
+  grid-column: 1/3;
+}
+
+#maxDate {
+  grid-row: 3;
+  grid-column: 3/5;
+}
+
+#timeRange-label {
+  grid-row: 4;
+  grid-column: 1/5;
+
+  margin: auto;
+}
+
+#timeRange-span {
+  grid-row: 5;
+  grid-column: 1/5;
+
+  display: grid;
+  grid-template-columns: 1.3fr 0.4fr 1.3fr;
+  grid-template-columns: 1;
+}
+
+#timeRangeBegin {
+  grid-row: 1;
+  grid-column: 1;
+
+  margin: auto;
+}
+
+#timeRangeDash {
+  grid-row: 1;
+  grid-column: 2;
+  
+  margin: auto;
+}
+
+#timeRangeEnd {
+  grid-row: 1;
+  grid-column: 3;
+
+  margin: auto;
+}
+
+#courts-label {
+  grid-row: 6;
+  grid-column: 1;
+}
+
+.courts-div {
+  grid-row: 6;
+  grid-column: 2/5;
+}
+
+.settings-label {
+  color: white;
+  margin: 1em 0.5em 1em 0.5em;
+}
+
+.settings-input {
+  padding: 1.5em 0em 1.5em 1.5em;
+  margin: 1em 0.5em 1em 0.5em;
+
+  width: calc(100% - 2.5em);
+
+  border-style: solid;
+  border-width: 0.1em;
+  border-radius: 0.75em;
+  border-color: white;
+
+  background-color: white;
+}
+
+.courts {
+  width: calc(100% - 7em);
+}
+
+.delete-court {
+  background-color: #f47174;
+  color: white;
+
+  border: none;
+  border-radius: 0.75em;
+
+  height: 4em;
+  width: 4em;
+
+  margin: auto;
+
+  cursor: pointer;
+}
+
+.delete-court:hover {
+  background-color: #8b0000;
+}
+
+.add-court {
+  background-color: #3d85f7;
+  color: white;
+
+  border: none;
+  border-radius: 0.75em;
+
+  width: calc(100% - 0.5em * 2);
+
+  padding: 1.5em;
+  margin: 1em 0.5em 1em 0.5em;
+
+  cursor: pointer;
+}
+
+.add-court:hover {
+  background-color: #0062ff;
+}
+
+input[type="submit"] {
+  background-color: #3d85f7;
+  color: white;
+
+  border: none;
+  border-radius: 0.75em;
+
+  width: calc(100% - 0.5em * 2);
+
+  padding: auto;
+  margin: 0em 0.5em 1em 0.5em;
+
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0062ff;
+}
