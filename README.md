@@ -1,5 +1,5 @@
 # Court Booker
-This react website allows users to book a sports court quickly and easily. 
+This react website allows apartment complex admins to manage sports court bookings, sort bookings by various criteria, and configure the booking website settings.
 
 ## Features
 * Select a court, a date, and an available timing
